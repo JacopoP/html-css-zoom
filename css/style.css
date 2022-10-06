@@ -4,30 +4,127 @@
     box-sizing: border-box;
 }
 
+body{
+    color: #fff;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
 header{
-    background-color: aqua;
+    background-color: black;
     width: 100%;
-    height: 100px;
+    padding-bottom: 30px;
+}
+
+.top-options{
+    text-align: right;
+    padding: 5px;
+}
+
+.top-options *{
+    display: inline-block;
+    background-color: #4A4A4A;
+    padding: 2px;
+    border-radius: 4px;
+}
+
+.top-options img{
+    width: 15px;
+    height: 15px;
+    position: relative;
+    top: 2px;
 }
 
 main{
     background-color: black;
-    height: calc(100vh - 200px);
+    height: calc(100vh - 144px);
     width: 100%;
     overflow-y: auto;
 }
 
 .flex-container{
     display: flex;
+    justify-content: space-between;
+    row-gap: 20px;
+    flex-wrap: wrap;
     width: 90%;
-    height: 200vh;
-    background-color: yellow;
+    max-width: 1352px;
     margin: auto;
-    border: 10px solid red;
 }
 
-footer{
-    background-color: brown;
+.user-card{
+    position: relative;
+    width: calc(1352px / 7 - 5px);
+}
+
+.user-card img{
     width: 100%;
-    height: 100px;
+}
+
+.username{
+    position: absolute;
+    background-color: rgba(117, 129, 143, .6);
+    bottom: 15px;
+    left: 0;
+}
+
+/* footer rules */
+footer{
+    background-color: #222222;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 4px;
+    width: 100%;
+    min-width: 984px;
+    height: 80px;
+}
+
+#video-audio{
+    display: flex;
+}
+
+.icon{
+    text-align: center;
+    margin: 0 7px;
+}
+
+.icon .symbol{
+    font-size: 25px;
+}
+
+.icon .action-name{
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+#video-audio .fa-angle-up{
+    margin-top: 12px;
+}
+
+#end-meeting{
+    background-color: #4A4A4A;
+    color: red;
+    height: 100%;
+    padding: 0 20px;
+    line-height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+footer ul li{
+    display: inline-block;
+    list-style: none;
+}
+
+#green{
+    color: green;
+}
+
+li .fa-angle-up{
+    position: relative;
+    bottom: 20px;
 }
